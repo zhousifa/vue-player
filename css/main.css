@@ -1,0 +1,262 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.song_list::-webkit-scrollbar,
+.content-wrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: #0e487c;
+}
+
+.song_list::-webkit-scrollbar-thumb,
+.content-wrapper::-webkit-scrollbar-thumb {
+    background-color: #4facfa;
+    border-radius: 3px;
+}
+
+#app {
+    width: 800px;
+    background-color: #65c4e4;
+    margin: 10px auto;
+}
+
+.player_warp {
+    width: 100%;
+    height: 100%;
+}
+
+.search_bar {
+    width: 100%;
+    height: 50px;
+}
+
+.search_bar input {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0;
+    background-color: rgb(171, 212, 226);
+    outline: 0;
+    float: right;
+    margin: 8px 20px;
+    text-indent: 20px;
+}
+
+.center_con {
+    background-color: #fff6003b;
+    height: 500px;
+}
+
+.song_wrapper,
+.content-wrapper {
+    width: 199px;
+    height: 500px;
+    float: left;
+}
+
+.song_wrapper {
+    border-right: 1px solid #632a373b;
+}
+
+.song_list {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.content-wrapper {
+    overflow: auto;
+    border-left: 1px solid #632a373b;
+}
+
+/* 
+.song_list::-webkit-scrollbar,
+.content-wrapper::-webkit-scrollbar {
+    width: 0 !important;
+} */
+
+.song {
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.song:nth-child(2n+1) {
+    background-color: #ffffff8c;
+}
+
+.song a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/play.jpg");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+.song span {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+.song span i {
+    background-image: url(../img/mv.jpg);
+    background-size: 20px 20px;
+    background-repeat: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.player-con {
+    width: 50%;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+.disc {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    background-image: url(../img/disc1.png);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+}
+
+.cover {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 190px;
+    left: 150px;
+    border-radius: 50%;
+}
+
+
+.content-wrapper dl {
+    width: 100%;
+}
+
+.content-wrapper dl dt {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 0 7px;
+}
+
+.content-wrapper dl dt img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.content-wrapper .name {
+    float: left;
+    width: 129px;
+    height: 50px;
+    margin: 0;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content-wrapper .detail {
+    float: left;
+    font-size: 13px;
+    margin: 10px 10px 20px 55px;
+    text-indent: 2em;
+}
+
+/* .autoRotate {
+    animation: run 5s linear infinite;
+} */
+
+@keyframes run {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pic_wrapper {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    margin: 100px auto;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 75px;
+    float: left;
+}
+
+.audio_con {
+    width: 100%;
+    height: 50px;
+}
+
+.audio_con audio {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: rgb(101, 196, 228);
+}
+
+audio::-webkit-media-controls-panel {
+    background: rgb(101, 196, 228);
+}
+
+
+.video_con {
+    position: absolute;
+    top: 10px;
+    width: 800px;
+    height: 600px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.mask {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #77777778;
+}
